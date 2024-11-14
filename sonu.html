@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            width: 100%;
+            height: 1000px;
+            background-color: #0D0D0D;
+        }
+
+        .arijit {
+            width: 100%;
+            height: 200px;
+        }
+
+        .footer1 {
+            top: 270px;
+            color: white;
+            position: relative;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .ar1 {
+            width: 15%;
+            height: 170px;
+            background-image: url("sonu.jpg");
+            background-size: 100% 100%;
+            border-radius: 50%;
+            background-position: center;
+            float: left;
+            position: relative;
+            top: 40px;
+            left: 530px;
+        }
+
+        .ar2 {
+            width: 100%;
+            height: 50px;
+            color: white;
+            border-radius: 50%;
+            float: left;
+            font-size: 1.6rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            top: 50px;
+            text-align: center;
+        }
+
+        .bio {
+            height: 150px;
+            width: 100%;
+
+
+        }
+
+        .bio1 {
+            position: relative;
+            top: 210px;
+            left:0px;
+            height: 150px;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1030px;
+            text-align: justify;
+            padding: 10px;
+            color: white;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid gray;
+        }
+       
+        .song {
+            width: 100%;
+            height: 150px;
+        }
+
+        .head {
+            width: 100%;
+            height: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: 1.3em;
+            ;
+            color: white;
+            position: relative;
+
+            top: 70px;
+            left: 120px;
+        }
+
+        .c1 {
+            width: 20%;
+            height: 120px;
+            position: relative;
+            top: 130px;
+            left: 120px;
+            float: left;
+        }
+
+        .c2 {
+            width: 80%;
+            height: 100px;
+            position: relative;
+            top: 150px;
+            left: 200px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.3rem;
+        }
+
+        .cc1 {
+            width: 100%;
+            height: 120px;
+            background-image: url("main.jpg");
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="first ">
+            <div class="s1"></div>
+            <div class="s2"><a href="index.html" style="text-decoration: none; color:white">SUR Milaap</a></div>
+            <div class="s3"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-backward"></i></a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="arijit">
+            <div class="ar1"></div>
+            <div class="ar2">
+                <h3>SONU NIGAM</h3>
+            </div>
+        </div>
+        <div class="head">HIT SONG</div>
+        <div clas="song">
+            <div class="c1">
+                <a id='song-link-9' onclick="updatePlayer(8)">
+                    <div class="cc1">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="c2">
+                Song :Main Agar Kahoon<br>
+                Movie: Om Shanti Om (2007)
+            </div>
+        </div>
+        <div class="bio">
+            <div class="bio1">
+                <p><b>ABOUT</B>
+                <p>
+                <p>Sonu Nigam (born: 30 July 1973, Faridabad , Haryana , India ) is a famous singer of Hindi films.
+                    Apart from Hindi, he has also sung in Kannada , Oriya , Tamil , Assamese , Punjabi , Bengali ,
+                    Marathi and Chhattisgarhi . He has made many indi-pop
+                    albums and worked in some Hindi films.Sonu sang his first song for Doordarshan's serial Talaash
+                    (1992), after which he entered Bollywood with the song O Aasmaan Wale Jami Par from the film Aaja
+                    Meri Jaan (1993) , then he started making advertisements on radio. He got big success when his song
+                    "Accha Sila Diya Tune Mere Pyar Ka" was released on 1 January 1993. </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                Copyright ©2024 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Chhaya
+            </div>
+        </div>
+        <div class="player" id="player">
+            <div class="p1" id="image">
+            </div>
+            <div class="p2"><b id="songName">Song Name</b><br><small><span id="artistName">artist name</span></small>
+            </div>
+            <div class="p3">
+                <audio id="audioPlayer" controls loop>
+                    <source src="" type="audio/mpeg">
+                </audio>
+                <i class="fa fa-backward" id="backwardBtn" onclick="playPrevious()"></i>
+                <i class="fa fa-forward" id="forwardBtn" onclick="playNext()"></i>
+            </div>
+            <div class="p4">
+                <i class="fa fa-download" id="downloadBtn" onclick="downloadSong()"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('audioPlayer').addEventListener('ended', function () {
+            playNext();
+        });
+    </script>
+</body>

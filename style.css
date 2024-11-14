@@ -1,0 +1,600 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D0D0D;
+  overflow-x: hidden !important;
+
+}
+.mydiv {width: 100%;height: 2700px;background-color: #0D0D0D;}
+.first { width: 100%;height: 80px;}
+.s1 { position: relative; 
+  left:50px;
+  width: 8%;
+  height: 80px;
+  float: left;
+  background-image: url("logo.png");
+  background-size: 100% 100%;
+}
+.s2 {
+  width: 42%;
+  height: 80px;
+  float: left;
+  color: white;
+  position: relative;
+  top: 20px;
+  left: 55px;
+  font-size: 2rem;
+  font-family: "Lucida Calligraphy";
+}
+.nav {width: 100%;height: 50px;background-color: black; float:left;}
+.nav ul {margin: 0px;text-align: left;position: relative;top: 5px;}
+.nav ul li {color: white;display: inline-block; font-family: "Arial";padding-left;20px}
+.nav ul li a:link {text-decoration: none;color: white;padding: 10px;display:block;}
+.nav ul li a:visited {text-decoration: none;color: white}
+.nav ul li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 140px;
+  min-height: 90px;
+  text-align: center;
+  z-index: 1;
+}
+.dropdown-content a:hover {border-radius: 10px;color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.slideshow {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-image: url("party.jpg");
+  background-size: 100% 100%;
+  animation: changeImage 20s infinite;
+}
+.second {
+  width: 100%;
+  height: 40px;
+  font-family: "Lucida Calligraphy";
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+.retro {
+  width: 100%;
+  height: 40px;
+  font-family: "Lucida Calligraphy";
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+  top: 90px;
+  left: 40px;
+}
+.artist {
+  width: 100%;
+  height: 40px;
+  font-family: "Lucida Calligraphy";
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+  top: 160px;
+  left: 40px;
+}
+.trend {
+  width: 100%;
+  height: 40px;
+  font-family: "Lucida Calligraphy";
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+  top: 230px;
+  left: 40px;
+}
+.tic {
+  width: 100%;
+  height: 40px;
+  font-family: "Lucida Calligraphy";
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+  top: 300px;
+  left: 40px;
+}
+.wed {
+  width: 100%;
+  height: 40px;
+  font-family: "Lucida Calligraphy";
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+  top: 370px;
+  left: 40px;
+}
+.third,.retro1,.top,.trend1,.rom1,.wed1{
+  width: 100%;
+  height: 200px;
+  font-family: "Arial";
+}
+.k1 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.top1 {
+  width: 15%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 170px;
+  left: 50px;
+}
+.tr1 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 240px;
+  left: 30px;
+}
+.om1 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 310px;
+  left: 30px;
+}
+.d1 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 380px;
+  left: 30px;
+}
+.r1 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+.t1 {
+  width: 100%;
+  height: 160px;
+  background-image: url("chamkila.jpg");
+  background-size: 100% 100%;
+}
+.ro1 {
+  width: 100%;
+  height: 160px;
+  background-image: url("do.jpg");
+  background-size: 100% 100%;
+}
+.do1 {
+  width: 100%;
+  height: 160px;
+  background-image: url("aaj.jpg");
+  background-size: 100% 100%;
+}
+.te1 {
+  width: 100%;
+  height: 160px;
+  background-image: url("pehle.jpg");
+  background-size: 100% 100%;
+
+}
+.e1 {
+  width: 100%;
+  height: 160px;
+  background-image: url("ankhon.png");
+  background-size: 100% 100%;
+}
+.b1 {
+  width: 100%;
+  height: 160px;
+  background-image: url("sonu.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+.k2 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 90px;
+}
+.r2 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 90px;
+}
+.top2 {
+  width: 15%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 170px;
+  left: 190px;
+}
+.tr2 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 240px;
+  left: 90px;
+}
+.om2 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 310px;
+  left: 90px;
+}
+.d2 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 380px;
+  left: 90px;
+}
+.t2 {
+  width: 100%;
+  height: 160px;
+  background-image: url("akhiyaan.jpg");
+  background-size: 100% 100%;
+}
+.ro2 {
+  width: 100%;
+  height: 160px;
+  background-image: url("jeena.jpg");
+  background-size: 100% 100%;
+}
+.do2 {
+  width: 100%;
+  height: 160px;
+  background-image: url("radha.jpg");
+  background-size: 100% 100%;
+}
+
+.ro3 {
+  width: 100%;
+  height: 160px;
+  background-image: url("kithe.jpg");
+  background-size: 100% 100%;
+}
+.do3 {
+  width: 100%;
+  height: 160px;
+  background-image: url("london.jpg");
+  background-size: 100% 100%;
+}
+.ro4 {
+  width: 100%;
+  height: 160px;
+  background-image: url("tujh.jpg");
+  background-size: 100% 100%;
+}
+.do4 {
+  width: 100%;
+  height: 160px;
+  background-image: url("dilli.jpg");
+  background-size: 100% 100%;
+}
+.e2 {
+  width: 100%;
+  height: 160px;
+  background-image: url("hamne.jpg");
+  background-size: 100% 100%;
+}
+.te2 {
+  width: 100%;
+  height: 160px;
+  background-image: url("omaahi.jpg");
+  background-size: 100% 100%;
+}
+.b2 {
+  width: 100%;
+  height: 160px;
+  background-image: url("Shreya-G.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+.k3 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 150px;
+}
+.r3 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 150px
+}
+.top3 {
+  width: 15%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 170px;
+  left: 330px
+}
+.tr3 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 240px;
+  left: 150px
+}
+.om3 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 310px;
+  left: 150px
+}
+.b1 .overlay {
+  background-image: url("s.png");
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top:50%;
+  bottom: 50%;
+  border:none
+}
+
+.d3 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 380px;
+  left: 150px
+}
+.t3 {
+  width: 100%;
+  height: 160px;
+  background-image: url("haaniya.jpg");
+  background-size: 100% 100%;
+}
+.e3 {
+  width: 100%;
+  height: 160px;
+  background-image: url("lag.jpg");
+  background-size: 100% 100%;
+
+
+}
+
+.te3 {
+  width: 100%;
+  height: 160px;
+  background-image: url("husn.jpg");
+  background-size: 100% 100%;
+}
+.b3 {
+  width: 100%;
+  height: 160px;
+  background-image: url("arijit.jpeg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+.k4 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 210px;
+}
+
+.r4 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 210px;
+}
+
+.tr4 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 240px;
+  left: 210px;
+}
+.om4 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 310px;
+  left: 210px;
+}
+.d4 {
+  width: 20%;
+  height: 200px;
+  float: left;
+  position: relative;
+  top: 380px;
+  left: 210px;
+}
+.top4 {width: 15%;height: 200px;float: left;position: relative;top: 170px;left: 450px;}
+.e4 {width: 100%;height: 160px;background-image: url("ajeeb.jpg");background-size: 100% 100%;}
+.t4 {width: 100%; height: 160px; background-image: url("heer.jpg"); background-size: 100% 100%;}
+.te4 {width: 100%; height: 160px; background-image: url("lutt.jpg"); background-size: 100% 100%;}
+.b4 { width: 100%;height: 160px;background-image: url("sunidhi.jpg");  background-size: 100% 100%;border-radius: 50%;}
+.t1:hover .overlay,.t2:hover .overlay,.t3:hover .overlay,.t4:hover .overlay { display: block;}
+.ro1:hover .overlay,.ro2:hover .overlay,.ro3:hover .overlay,.ro4:hover .overlay {display: block;}
+.do1:hover .overlay,.do2:hover .overlay,.do3:hover .overlay,.do4:hover .overlay { display: block;}
+.e1:hover .overlay,.e2:hover .overlay,.e3:hover .overlay,.e4:hover .overlay {display: block;}
+.b1:hover .overlay,.b2:hover .overlay,.b3:hover .overlay,.b4:hover .overlay { display: block;}
+.te1:hover .overlay,.te2:hover .overlay,.te3:hover .overlay,.te4:hover .overlay {display: block;}
+.t1:hover,.t2:hover,.t3:hover,.t4:hover {opacity: 0.4;}
+.e1:hover,.e2:hover,.e3:hover,.e4:hover {opacity: 0.4;}
+.te1:hover,.te2:hover,.te3:hover,.te4:hover {opacity: 0.4;}
+.b1:hover,.b2:hover,.b3:hover,.b4:hover {opacity: 0.4;}
+.do1:hover,.do2:hover,.do3:hover,.do4:hover { opacity: 0.4;}
+.ro1:hover,.ro2:hover,.ro3:hover,.ro4:hover {opacity: 0.4;}
+.overlay {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-image: url("play1.png");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.m1,.m2,.m3,.m4 {width: 100%;height: 20px;color: white;position: relative;top: 20px;text-align: center;}
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: wheat;
+  display: none;
+}
+.p1 {
+  width: 8%;
+  height: 80px;
+  float: left;
+  background-image: url("logo.png");
+  background-size: 100% 100%;
+}
+.p2 {
+  width: 30%;
+  height: 80px;
+  float: left;
+  color: black;
+  position: relative;
+  top: 20px;
+  left: 15px;
+  font-size: 1.1rem;
+  font-family: "Arial";
+}
+.p3 {
+  position: relative;
+  top: 15px;
+  width: 40%;
+  height: 80px;
+  float: left;
+  align-items: center;
+}
+.p4 {
+  position: relative;
+  top: 25px;
+  width: 12%;
+  height: 80px;
+  float: left;
+  left: 40px;
+  color: #EA4C46;
+  align-items: center;
+}
+.p3 i {
+  margin: 0 10px;
+  position: relative;
+  bottom: 20px;
+}
+.p4 i {
+  color: black;
+  font-size: 20px;
+  border: 2px solid #EA4C46;
+  border-radius: 50%;
+  background-color: #EA4C46;
+  padding: 5px;
+}
+@keyframes changeImage {
+  0% {
+    background-image: url("fresh.jpg");
+  }
+
+  25% {
+    background-image: url("banner.jpg");
+  }
+
+  50% {
+    background-image: url("album.jpg");
+  }
+
+  75% {
+    background-image: url("party.jpg");
+  }
+
+  100% {
+    background-image: url("old.png");
+  }
+}
+audio::-webkit-media-controls-panel {
+  background-color: wheat;
+  min-width: 100px;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: #EA4C46;
+  border-radius: 50%;
+  font-size: large;
+}
+audio::-webkit-media-controls-current-time-display {
+  color: black;
+  font-size: large;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  font-size: large;
+  color: black;
+}
+audio::-webkit-media-controls-volume-slider {
+  background-color: white
+}
+.line{
+  height: 2px; max-width: 1100px; width:100%; border-top: 2px solid white; margin: 0 auto;position: relative;top:450px;
+}
+.footer{ height:50px;width:100%;
+}
+.footer1{top:500px;color:white;position: relative;font-size:larger;text-align: center;
+}
+
+
+

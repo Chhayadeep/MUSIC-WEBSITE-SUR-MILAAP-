@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="first ">
+            <div class="s1"></div>
+            <div class="s2">SUR Milaap</div>
+        </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">All</a></li>
+                    <li><a href="#new">New Songs</a></li>
+                    <li><a href="#hits">Retro Hits</a></li>
+                    <li><a href="#trending">Trending Songs</a></li>
+                    <li><a href="#top">Top Artists</a></li>
+                    <li class="dropdown">
+                        <a href="#">Top Playlists
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#rom">Romantic Hits</a>
+                            <a href="#ing">Wedding Songs</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+        <div class="slideshow">
+        </div>
+        <div id="new" class="second">NEW SONGS</div>
+        <div class="third">
+            <div class="k1">
+                <a id='song-link-1' onclick="updatePlayer(0)">
+                    <div class="t1">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m1"><b>TU KYA JAANE</b> <br><small>Yashika Sikka</small></div>
+            </div>
+            <div class="k2">
+                <a id='song-link-2' onclick="updatePlayer(1)">
+                    <div class="t2">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m2"><b>AKHIYAAN GULAAB</b><br><small>Mitraz</small></div>
+            </div>
+            <div class="k3">
+                <a id='song-link-3' onclick="updatePlayer(2)">
+                    <div class="t3">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m3"><b>VE HAANIYAAN</b> <br><small>Danny</small></div>
+            </div>
+            <div class="k4">
+                <a id='song-link-4' onclick="updatePlayer(3)">
+                    <div class="t4">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m4"><b>HEER AASMANI</b> <br><small>Shekhar</small></div>
+            </div>
+        </div>
+        <div id="hits" class="retro">RETRO SONGS</div>
+        <div class="retro1">
+            <div class="r1">
+                <a id='song-link-5' onclick="updatePlayer(4)">
+                    <div class="e1">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m1"><b>IN ANKHON KI MASTI</b><br><small>Asha Bhosle</small></div>
+            </div>
+            <div class="r2">
+                <a id='song-link-6' onclick="updatePlayer(5)">
+                    <div class="e2">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m2"><b>HUMNE TUMKO DEKHA</b> <br><small>Shailendra Singh</small></div>
+            </div>
+            <div class="r3">
+                <a id='song-link-7' onclick="updatePlayer(6)">
+                    <div class="e3">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m3"><b>LAG JA GALE</b> <br><small>Lata Mangeshkar</small></div>
+            </div>
+            <div class="r4">
+                <a id='song-link-8' onclick="updatePlayer(7)">
+                    <div class="e4">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m4"><b>AJEEB DASTAN HAI YEH</b> <br><small>Lata Mangeshkar</small></div>
+            </div>
+        </div>
+        <div id="top" class="artist">TOP ARTISTS</div>
+        <div class="top">
+            <div class="top1">
+                <a href="login.html">
+                    <div class="b1">
+                        <div class="overlay">
+
+                        </div>
+                    </div>
+                </a>
+                <div class="m1"><b>SONU NIGAM</b></div>
+            </div>
+            <div class="top2">
+                <a href="shreya.html">
+                    <div class="b2">
+
+                    </div>
+                </a>
+                <div class="m2"><b>SHREYA GHOSHAL</b></div>
+            </div>
+            <div class="top3">
+                <a href="arijit.html">
+                    <div class="b3">
+
+                    </div>
+                </a>
+                <div class="m3"><b>ARIJIT SINGH</b></div>
+            </div>
+            <div class="top4">
+                <a href="sunidhi.html">
+                    <div class="b4">
+
+                    </div>
+                </a>
+                <div class="m4"><b>SUNIDHI CHAUHAN</b></div>
+            </div>
+        </div>
+        <div id="trending" class="trend">TRENDING SONGS</div>
+        <div class="trend1">
+            <div class="tr1">
+                <a id='song-link-13' onclick="updatePlayer(12)">
+                    <div class="te1">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m1"><b>PEHLE BHI MAIN</b> <br><small>Vishal Mishra</small></div>
+            </div>
+            <div class="tr2">
+                <a id='song-link-14' onclick="updatePlayer(13)">
+                    <div class="te2">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m2"><b>OH MAAHI</b> <br><small>Arijit Singh</small></div>
+            </div>
+            <div class="tr3">
+                <a id='song-link-15' onclick="updatePlayer(14)">
+                    <div class="te3">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m3"><b>HUSN</b> <br><small>Anuv Jain</small></div>
+            </div>
+            <div class="tr4">
+                <a id='song-link-16' onclick="updatePlayer(15)">
+                    <div class="te4">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m4"><b>LUTT PUTT GAYA</b> <br><small>Arijit Singh</small></div>
+            </div>
+        </div>
+        <div id="rom" class="tic">ROMANTIC HITS</div>
+        <div class="rom1">
+            <div class="om1">
+                <a id='song-link-17' onclick="updatePlayer(16)">
+                    <div class="ro1">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m1"><b>DO GALLAN</b> <br><small>Neha Kakkar</small></div>
+            </div>
+            <div class="om2">
+                <a id='song-link-18' onclick="updatePlayer(17)">
+                    <div class="ro2">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m2"><b>JEENA JEENA</b> <br><small>Jyoti Rajpurohit</small></div>
+            </div>
+            <div class="om3">
+                <a id='song-link-19' onclick="updatePlayer(18)">
+                    <div class="ro3">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m3"><b>KITHE CHALIYE TU</b> <br><small>Jubin Nautiyal</small></div>
+            </div>
+            <div class="om4">
+                <a id='song-link-20' onclick="updatePlayer(19)">
+                    <div class="ro4">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m4"><b>TUJH MEIN RAB DIKHTA HAI</b> <br><small>Jai Kadn</small></div>
+            </div>
+        </div>
+        <div id="ing" class="wed">WEDDING SONGS</div>
+        <div class="wed1">
+            <div class="d1">
+                <a id='song-link-21' onclick="updatePlayer(20)">
+                    <div class="do1">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m1"><b>AAJ SAJEYA</b> <br><small>Alaya</small></div>
+            </div>
+            <div class="d2">
+                <a id='song-link-22' onclick="updatePlayer(21)">
+                    <div class="do2">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m2"><b>RADHA</b> <br><small>Shreya Ghoshal</small></div>
+            </div>
+            <div class="d3">
+                <a id='song-link-23' onclick="updatePlayer(22)">
+                    <div class="do3">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m3"><b>LONDON THUMAKDA</b> <br><small>Neha Kakkar</small></div>
+            </div>
+            <div class="d4">
+                <a id='song-link-24' onclick="updatePlayer(23)">
+                    <div class="do4">
+                        <span class="overlay"></span>
+                    </div>
+                </a>
+                <div class="m4"><b>DILLIWALI GIRLFRIEND</b> <br><small>Sunidhi Chauhan</small></div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="footer">
+            <div class="footer1">
+                Copyright ©2024 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Chhaya
+            </div>
+        </div>
+        <div class="player" id="player">
+            <div class="p1" id="image">
+            </div>
+            <div class="p2"><b id="songName">Song Name</b><br><small><span id="artistName">artist name</span></small>
+            </div>
+            <div class="p3">
+                <audio id="audioPlayer" controls>
+                    <source src="" type="audio/mpeg">
+                </audio>
+                <i class="fa fa-backward" id="backwardBtn" onclick="playPrevious()"></i>
+                <i class="fa fa-forward " id="forwardBtn" onclick="playNext()"></i>
+            </div>
+            <div class="p4">
+                <i class="fa fa-download" id="downloadBtn" onclick="downloadSong()"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('audioPlayer').addEventListener('ended', function () {
+            playNext();
+        });
+    </script>
+</body>
+
+</html>

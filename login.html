@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("nn.jpg");
+            opacity: 0.8;
+            overflow: hidden;
+          }
+        .container {
+            max-width: 600px;
+            margin: 150px auto;
+            padding: 70px;
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color:white
+        }
+        .form-group {
+            margin-bottom: 10px;
+            margin-top:10px;
+        }
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .btn-submit {
+          font-weight: bold;
+            font-size:large;
+            width: 100%;
+            padding: 10px;
+            background-color:white;
+            color:black;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Subscribe to View This Page</h2>
+        <form name="subscribeForm" onsubmit="return subscribe() ">
+            <div class="form-group">  
+                <input type="text" id="email" name="email" placeholder="Enter Email Address" required>
+            </div>
+            <button type="submit" class="btn-submit">Subscribe</button>
+        </form>
+    </div>
+    <script>
+   function subscribe(){
+    var email = document.getElementById('email').value;
+    if(email.includes('@')&&email.includes('.')) {
+        window.location.href = "sonu.html"; 
+    } else {
+        alert("Please enter a valid email address."); 
+    }
+    return false;
+  }   
+    </script>

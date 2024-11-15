@@ -53,4 +53,4 @@ jobs:
           app-name: 'chhaya'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2B3C86B2490C4F48BCCC9565A71AA460 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_30B22EA4DFAC4764904B13BCA68E830E }}
